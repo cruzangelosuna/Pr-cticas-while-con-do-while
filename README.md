@@ -1,1 +1,35 @@
 # Pr-cticas-while-con-do-while
+#include <iostream>
+using namespace std;
+
+int main() {
+    int limite;
+    int contador = 1;
+
+    cout << "WHILE\n";
+    cout << "Ingresa un limite: ";
+    cin >> limite;
+
+    while (contador <= limite) {
+        cout << contador << " ";
+        contador++;
+    }
+
+    cout << "\n\nDO-WHILE\n";
+    cout << "Ingresa otro limite: ";
+    cin >> limite;
+
+    contador = 1;
+
+    if (limite >= 1) {
+        do {
+            cout << contador << " ";
+            contador++;
+        } while (contador <= limite);
+    } else {
+        cout << "No hay numeros que mostrar.";
+    }
+
+    cout << endl;
+    return 0;
+}
